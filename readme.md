@@ -41,7 +41,6 @@ Program til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3
 | 00;00 | ***Genopfriskning***                                      | Hvor slap vi?                                                | Live coding         |
 | 00:10 | **Datahåndtering i R (med tidyverse) - fortsat**          | Rekodning af flere variable<br />Join/merge af data<br />Pivotering | Live-coding         |
 | 00:55 | *Pause*                                                   |                                                              | -                   |
-| 00:55 | *Pause*                                                   |                                                              | -                   |
 | 1:00  | **Udforskning af data**                                   | Frekvenstabeller<br />"Split-apply-combine" med group by og summarise | Live coding         |
 | 1:25  | ***Øvelse: Group by***                                    |                                                              | Øvelse              |
 | 1:40  | **Håndtering af factors i R**                             | Konvertering til factor<br />Ordered/unordered               | Live coding         |
