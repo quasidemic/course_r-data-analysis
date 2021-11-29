@@ -27,7 +27,7 @@ Program til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3
 | 4:40  | *Pause*                                                      |                                                              | -                   |
 | 4:45  | **Datahåndtering i R (med tidyverse) - fortsat**             | [Rekodning af kategorier](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_recoding-categories.ipynb) | Live coding         |
 | 5:05  | ***[Øvelse: Rekodning af kategorier](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/7)*** |                                                              | Øvelse              |
-| 5:20  | **[Introduktion til datavisualisering i R (med ggplot2) - fortsat]((https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_visualize-ggplot2.ipynb))** | Gængse plots (scatterplots, smooth, bar, histogram)<br />Justering af plot-elementer | Live coding         |
+| 5:20  | **[Introduktion til datavisualisering i R (med ggplot2) - fortsat](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_visualize-ggplot2.ipynb)** | Gængse plots (scatterplots, smooth, bar, histogram)<br />Justering af plot-elementer | Live coding         |
 | 5:45  | ***[Øvelse: ggplot2](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/13)*** |                                                              | Øvelse              |
 | 6:00  | *Slut*                                                       |                                                              | -                   |
 
