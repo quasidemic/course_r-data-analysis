@@ -2,7 +2,7 @@
 
 
 
-Programforslag til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3/12-2021.
+Program til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3/12-2021.
 
 
 
