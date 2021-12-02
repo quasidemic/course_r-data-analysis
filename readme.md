@@ -25,7 +25,7 @@ Program til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3
 | 3:45  | **Datahåndtering i R (med tidyverse)**                       | Introduktion til tidyverse<br />[Filtrering og selektion](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_filter-subset.ipynb)<br />[Variabelgenerering og simpel rekodning](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_create-recode-classes.ipynb) | Live coding         |
 | 4:30  | ***[Øvelse: Datahåndtering](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/5)*** |                                                              | Øvelse              |
 | 4:40  | *Pause*                                                      |                                                              | -                   |
-| 4:45  | **Datahåndtering i R (med tidyverse) - fortsat**             | [Rekodning af kategorier](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_recoding-categories.ipynb) | Live coding         |
+| 4:45  | **Datahåndtering i R (med tidyverse) - fortsat**             | [Rekodning af kategorier](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_recoding-categories.ipynb)<br />Rekodning af flere variable<br /> | Live coding         |
 | 5:05  | ***[Øvelse: Rekodning af kategorier](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/7)*** |                                                              | Øvelse              |
 | 5:20  | **[Introduktion til datavisualisering i R (med ggplot2) - fortsat](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_visualize-ggplot2.ipynb)** | Gængse plots (scatterplots, smooth, bar, histogram)<br />Justering af plot-elementer | Live coding         |
 | 5:45  | ***[Øvelse: ggplot2](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/13)*** |                                                              | Øvelse              |
@@ -36,22 +36,25 @@ Program til introduktionskursus i R til dataanalyse ved DEFACTUM 30/11-2021 og 3
 ## Dag 2 (8.45-14.45)
 
 
-| Time  | Module                                                    | Content                                                      | Undervisningsformat |
-| ----- | --------------------------------------------------------- | ------------------------------------------------------------ | ------------------- |
-| 00;00 | ***Genopfriskning***                                      | Hvor slap vi?                                                | Live coding         |
-| 00:10 | **Datahåndtering i R (med tidyverse) - fortsat**          | Rekodning af flere variable<br />Join/merge af data<br />Pivotering | Live-coding         |
-| 00:55 | *Pause*                                                   |                                                              | -                   |
-| 1:00  | **Udforskning af data**                                   | Frekvenstabeller<br />"Split-apply-combine" med group by og summarise | Live coding         |
-| 1:25  | ***Øvelse: Group by***                                    |                                                              | Øvelse              |
-| 1:40  | **Håndtering af factors i R**                             | Konvertering til factor<br />Ordered/unordered               | Live coding         |
-| 1:55  | *Pause*                                                   |                                                              |                     |
-| 2:00  | **Håndtering af factors i R - fortsat**                   | Factors i plots                                              | Demonstration       |
-| 2:15  | **Indlæsning af andre datatyper (med haven)**             | Indlæsning af Stata-data i R <br />Håndtering af labels      | Demonstration       |
-| 2:30  | **Introduktion til statistisk modellering i R**           | Simple uafhængighedstests (chi-i-anden, t-tests)             | Live coding         |
-| 3:00  | *Frokost*                                                 |                                                              | -                   |
-| 3:45  | **Introduktion til statistisk modellering i R - fortsat** | Simple regressionsanalyser i R (med tidymodels)<br />Factors og regressionsanalyser <br />Eksport af analyseresultater (med stargazer) | Live coding         |
-| 4:45  | *Pause*                                                   |                                                              | -                   |
-| 4:50  | ***Øvelse: Statistisk modellering***                      |                                                              | Live coding         |
-| 5:05  | TBD                                                       |                                                              | Live coding         |
-| 6:00  | Slut                                                      |                                                              | -                   |
+| Time  | Module                                                       | Content                                                      | Undervisningsformat         |
+| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------- |
+| 00;00 | ***Genopfriskning***                                         | Hvor slap vi?                                                | Live coding                 |
+| 00:10 | ***[Øvelse: ggplot2](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/14)*** |                                                              | Øvelse                      |
+| 00:30 | **[Håndtering af factors i R](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_factors.ipynb)** | Konvertering til factor<br />Ordered/unordered<br />Factors i plots | Live coding                 |
+| 00:55 | *Pause*                                                      |                                                              | -                           |
+| 1:00  | **[Indlæsning af andre datatyper (med `haven`)](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_haven-stata.ipynb)** | Indlæsning af Stata-data i R <br />Håndtering af labels      | Live coding                 |
+| 1:15  | **Datahåndtering i R (med tidyverse) - fortsat**             | [Join/merge af data](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_join-pivot.ipynb)<br /><br />Rekodning af flere variable<br />[Pivotering](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_join-pivot.ipynb) | Live-coding / Demonstration |
+| 1:55  | *Pause*                                                      |                                                              | -                           |
+| 2:00  | ***[Øvelse: Rekodning af kategorier](https://quasidemic.github.io/teachR/teachR_exercises.slides.html#/7)*** |                                                              | Øvelse                      |
+| 2:15  | **[Udforskning af data](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_tables-summaries.ipynb)** | Frekvenstabeller<br />"Split-apply-combine" med group by og summarise | Live coding                 |
+| 2:45  | **[Simple uafhængighedstests](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_statistics-intro.ipynb)** | Chi-i-anden                                                  | Live coding                 |
+| 2:55  | *Pause*                                                      |                                                              |                             |
+| 3:00  | **[Simple uafhængighedstests - fortsat](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_statistics-intro.ipynb)** | T-tests                                                      | Live coding                 |
+| 3:30  | *Frokost*                                                    |                                                              | -                           |
+| 4:00  | **[Introduktion til statistisk modellering i R](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_statistical-modelling.ipynb)** | Simple lineære og logistiske regressionsanalyser i R<br />Factors og regressionsanalyser | Live coding                 |
+| 4:30  | **[Eksport af resultater](https://github.com/quasidemic/teachR/blob/master/notebooks/teachR_output-results.ipynb)** | Tabeller med `kable`<br />Modeller med `stargazer`           | Live coding                 |
+| 4:55  | *Pause*                                                      |                                                              | -                           |
+| 5:00  | Buffer                                                       |                                                              | -                           |
+| 5:15  | **Introduktion til RMarkdown**                               |                                                              | Live coding                 |
+| 6:00  | Slut                                                         |                                                              | -                           |
 
