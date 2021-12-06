@@ -1,0 +1,82 @@
+---
+title: "European Social Survey 2018 report"
+author: "Kristian Gade Kjelmann"
+date: "2/12/2021"
+output: word_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(kableExtra)
+# Read in data
+ess18 <- read_csv("../data/ESS2018DK_subset.csv")
+
+
+```
+
+## This is the data
+
+In this report we are going to look at some immediate trends in the Danish population based on the European Social Survey 2018.
+
+The data looks as follows:
+
+```{r inspect, echo=FALSE}
+head(ess18)
+```
+
+Summary statistics give us the following:
+
+```{r inspect2, echo=FALSE}
+kbl(summary(ess18)) %>%
+    kable_classic_2(full_width = T, html_font = "Trebuchet")
+```
+
+
+## Some data handling
+
+We had to manipulate the data as such:
+
+```{r datahandle}
+ess18 <- ess18 %>%
+    mutate(age = 2018 - yrbrn,
+           wkhct_cat = case_when(
+            wkhct == 37 ~ "37 hours",
+            wkhct < 37 ~ "Less than 37 hours",
+            wkhct > 37 ~ "More than 37 hours",
+            TRUE ~ NA_character_ # specifies the type of missing (character missing)
+        ),
+           wkhct_cat = factor(wkhct_cat, levels = c('Less than 37 hours', '37 hours', 'More than 37 hours'), 
+                              ordered = TRUE))
+```
+
+## A trend
+
+We see a trend in this plot:
+
+```{r plot, echo=FALSE}
+ggplot(data = filter(ess18, grspnum < 100000), mapping = aes(x = yrbrn, y = grspnum)) +
+  geom_point(colour = "blue") +
+  geom_smooth(colour = "lightgreen", method = "lm") + 
+  theme_minimal()
+```
+
+## A table
+
+We also need to include a table!
+
+```{r table, echo = FALSE}
+summary_table <- ess18 %>%
+    filter(!is.na(vote)) %>%
+    group_by(vote, gndr) %>%
+    summarize(count = n()) %>%
+    mutate(pct = percent(count/sum(count)))
+
+kbl(summary_table, caption = "Voting across gender") %>%
+    kable_classic_2(full_width = F, html_font = "Trebuchet")
+```
